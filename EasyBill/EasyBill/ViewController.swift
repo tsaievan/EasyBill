@@ -10,21 +10,8 @@ import UIKit
 import PDFKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let image = UIImage(named: "") else {
-            return
-        }
-        let page = PDFPage(image: image)
-        let pageView = PDFView(frame: UIScreen.main.bounds)
-        pageView.backgroundColor = .red
-        view.addSubview(pageView);
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
     }
 }
 
