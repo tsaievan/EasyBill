@@ -18,9 +18,11 @@
 		577601592068F07300519BD3 /* EBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577601582068F07300519BD3 /* EBListViewController.swift */; };
 		5776015B2068F07F00519BD3 /* EBAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776015A2068F07F00519BD3 /* EBAddViewController.swift */; };
 		5776015D2068F08C00519BD3 /* EBFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776015C2068F08C00519BD3 /* EBFileViewController.swift */; };
+		6D8394054EA94F38C033EF61 /* Pods_EasyBill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD5D3F9AE99DF84DDD4456D /* Pods_EasyBill.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30C5E8C6A54486999949B931 /* Pods-EasyBill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBill.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBill/Pods-EasyBill.release.xcconfig"; sourceTree = "<group>"; };
 		57010468205FF5AD003219C7 /* EasyBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5701046B205FF5AD003219C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57010472205FF5AD003219C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		577601582068F07300519BD3 /* EBListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBListViewController.swift; sourceTree = "<group>"; };
 		5776015A2068F07F00519BD3 /* EBAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBAddViewController.swift; sourceTree = "<group>"; };
 		5776015C2068F08C00519BD3 /* EBFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBFileViewController.swift; sourceTree = "<group>"; };
+		ADD5D3F9AE99DF84DDD4456D /* Pods_EasyBill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyBill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C485B6E95FEF9BE574A4DEA3 /* Pods-EasyBill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBill/Pods-EasyBill.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8394054EA94F38C033EF61 /* Pods_EasyBill.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				5701046A205FF5AD003219C7 /* EasyBill */,
 				57010469205FF5AD003219C7 /* Products */,
+				E0CB453EB1C290935AE6BFE9 /* Pods */,
+				E2B2EE83D08CE9722A589A70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,23 @@
 			path = EasyBill;
 			sourceTree = "<group>";
 		};
+		E0CB453EB1C290935AE6BFE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C485B6E95FEF9BE574A4DEA3 /* Pods-EasyBill.debug.xcconfig */,
+				30C5E8C6A54486999949B931 /* Pods-EasyBill.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2B2EE83D08CE9722A589A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADD5D3F9AE99DF84DDD4456D /* Pods_EasyBill.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5701047A205FF5AD003219C7 /* Build configuration list for PBXNativeTarget "EasyBill" */;
 			buildPhases = (
+				66B22F9A5CE303AABD7E362C /* [CP] Check Pods Manifest.lock */,
 				57010464205FF5AD003219C7 /* Sources */,
 				57010465205FF5AD003219C7 /* Frameworks */,
 				57010466205FF5AD003219C7 /* Resources */,
+				B9147EB8B650087103EC4ADF /* [CP] Embed Pods Frameworks */,
+				76C0F5B2501576FD9340A677 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66B22F9A5CE303AABD7E362C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyBill-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C0F5B2501576FD9340A677 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyBill/Pods-EasyBill-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9147EB8B650087103EC4ADF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyBill/Pods-EasyBill-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyBill/Pods-EasyBill-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57010464205FF5AD003219C7 /* Sources */ = {
@@ -288,6 +369,7 @@
 		};
 		5701047B205FF5AD003219C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C485B6E95FEF9BE574A4DEA3 /* Pods-EasyBill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +384,7 @@
 		};
 		5701047C205FF5AD003219C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C5E8C6A54486999949B931 /* Pods-EasyBill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

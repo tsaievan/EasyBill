@@ -24,6 +24,6 @@ extension EBTabBarController {
         let vcInfo = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else {
                 return
         }
-        print("vcInfo===========\(vcInfo)")
+        
     }
 }
