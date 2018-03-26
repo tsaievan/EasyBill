@@ -11,8 +11,19 @@ import UIKit
 class EBTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupChildControllers()
     }
     
     
+}
+
+extension EBTabBarController {
+    fileprivate func setupChildControllers() {
+        guard let path = Bundle.main.path(forResource: "EBViewControllers.json", ofType: nil),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
+        let vcInfo = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) else {
+                return
+        }
+        print("vcInfo===========\(vcInfo)")
+    }
 }

@@ -1,0 +1,20 @@
+[
+ {
+ "className" : "EBListViewController",
+ "title" : "列表",
+ "imageName" : "tabBar_directory",
+ "selectedimageName" : "tabBar_directory_highlighted"
+ },
+ {
+ "className" : "EBAddViewController",
+ "title" : "添加",
+ "imageName" : "tabBar_add",
+ "selectedimageName" : "tabBar_add_highlighted"
+ },
+ {
+ "className" : "EBFileViewController",
+ "title" : "文件",
+ "imageName" : "tabBar_file",
+ "selectedimageName" : "tabBar_file_highlighted"
+ }
+ ]
