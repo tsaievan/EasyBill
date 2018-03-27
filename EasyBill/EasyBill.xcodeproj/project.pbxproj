@@ -18,6 +18,8 @@
 		577601592068F07300519BD3 /* EBListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577601582068F07300519BD3 /* EBListViewController.swift */; };
 		5776015B2068F07F00519BD3 /* EBAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776015A2068F07F00519BD3 /* EBAddViewController.swift */; };
 		5776015D2068F08C00519BD3 /* EBFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5776015C2068F08C00519BD3 /* EBFileViewController.swift */; };
+		57938F2F2068FB17009B45DA /* EBVcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938F2E2068FB17009B45DA /* EBVcModel.swift */; };
+		57938F312069D305009B45DA /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57938F302069D305009B45DA /* Bundle+Extensions.swift */; };
 		6D8394054EA94F38C033EF61 /* Pods_EasyBill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD5D3F9AE99DF84DDD4456D /* Pods_EasyBill.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		577601582068F07300519BD3 /* EBListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBListViewController.swift; sourceTree = "<group>"; };
 		5776015A2068F07F00519BD3 /* EBAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBAddViewController.swift; sourceTree = "<group>"; };
 		5776015C2068F08C00519BD3 /* EBFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBFileViewController.swift; sourceTree = "<group>"; };
+		57938F2E2068FB17009B45DA /* EBVcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBVcModel.swift; sourceTree = "<group>"; };
+		57938F302069D305009B45DA /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		ADD5D3F9AE99DF84DDD4456D /* Pods_EasyBill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyBill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C485B6E95FEF9BE574A4DEA3 /* Pods-EasyBill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyBill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyBill/Pods-EasyBill.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,10 +80,12 @@
 				577601372068C15400519BD3 /* EasyBill.xcdatamodeld */,
 				5701046B205FF5AD003219C7 /* AppDelegate.swift */,
 				577601522068E7F100519BD3 /* EBTabBarController.swift */,
+				57938F2E2068FB17009B45DA /* EBVcModel.swift */,
 				577601562068F05800519BD3 /* EBViewController.swift */,
 				577601582068F07300519BD3 /* EBListViewController.swift */,
 				5776015A2068F07F00519BD3 /* EBAddViewController.swift */,
 				5776015C2068F08C00519BD3 /* EBFileViewController.swift */,
+				57938F302069D305009B45DA /* Bundle+Extensions.swift */,
 				577601542068EF2100519BD3 /* EBViewControllers.json */,
 				57010472205FF5AD003219C7 /* Assets.xcassets */,
 				57010474205FF5AD003219C7 /* LaunchScreen.storyboard */,
@@ -236,11 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				577601392068C15400519BD3 /* EasyBill.xcdatamodeld in Sources */,
+				57938F312069D305009B45DA /* Bundle+Extensions.swift in Sources */,
 				577601512068C61E00519BD3 /* EBPicture.swift in Sources */,
 				5776015B2068F07F00519BD3 /* EBAddViewController.swift in Sources */,
 				577601592068F07300519BD3 /* EBListViewController.swift in Sources */,
 				577601532068E7F100519BD3 /* EBTabBarController.swift in Sources */,
 				5701046C205FF5AD003219C7 /* AppDelegate.swift in Sources */,
+				57938F2F2068FB17009B45DA /* EBVcModel.swift in Sources */,
 				5776015D2068F08C00519BD3 /* EBFileViewController.swift in Sources */,
 				577601572068F05800519BD3 /* EBViewController.swift in Sources */,
 			);
