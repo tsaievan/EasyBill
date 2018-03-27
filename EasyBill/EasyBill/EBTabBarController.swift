@@ -33,6 +33,8 @@ extension EBTabBarController {
                         break
                 }
                 ks.title = model.title
+                ks.tabBarItem.image = UIImage(named: model.imageName ?? "")
+                ks.tabBarItem.selectedImage = UIImage(named: model.selectedimageName ?? "")
                 addChildViewController(ks)
             }
         }
